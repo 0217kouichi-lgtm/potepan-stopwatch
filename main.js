@@ -18,13 +18,13 @@ startBtn.addEventListener("click", () => {
 
 
   timerID = setInterval(() => {
-    timecounter++;          // カウントを1増やす
+    timecounter++;          
 
     if (timecounter === 10) {
       timecounter = 0;
       Second.textContent = Number(Second.textContent) + 1;
     }
-    // timeDisplays[3] ではなく、milliSecond を使う！
+    
     milliSecond.textContent = timecounter;
 
     if (Number(Second.textContent) === 60) {
@@ -45,7 +45,7 @@ startBtn.addEventListener("click", () => {
 
 
 
-// ストップボタン
+
 stopBtn.addEventListener("click", () => {
 
   if (timerID !== null) {
@@ -60,12 +60,12 @@ stopBtn.addEventListener("click", () => {
 
 
 
-// リセットボタン
+
 resetBtn.addEventListener("click", () => {
   startBtn.disabled = false;
   stopBtn.disabled = false;
 
-  // タイマーが動いていたら止める＆変数も0に戻す
+  
   clearInterval(timerID);
   timerID = null;
   timecounter = 0;

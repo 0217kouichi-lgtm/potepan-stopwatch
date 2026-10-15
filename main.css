@@ -1,19 +1,19 @@
-/* 画面全体（body）の高さを画面いっぱいに広げ、body自体をflexboxにして中央寄せの基準にする */
+画面全体（body）の高さを画面いっぱいに広げ、body自体をflexboxにして中央寄せの基準にする
 body {
-    height: 100vh;           /* 画面の高さの100% */
-    margin: 0;               /* ブラウザの初期の余白を消す */
+    height: 100vh;           
+    margin: 0;               
     display: flex;
-    justify-content: center; /* 左右の中央寄せ */
+    justify-content: center; 
 }
 
-/* メインコンテナの設定 */
+
 .maincontainer {
     display: flex;          
     flex-direction: column; 
     align-items: center;    
     
-    /* ② maincontainerを少し上に移動する（上から少し余白をあける設定） */
-    margin-top: 150px;      /* 好みに合わせて数値を変更してください（例: 100px〜200pxなど） */
+    
+    margin-top: 150px;      
 }
 
 h3{
@@ -24,6 +24,6 @@ h3{
 .time {
   
     font-size: 30px;
-    margin-bottom: 30px;         /* 文字サイズを大きくする場合の例 */
+    margin-bottom: 30px;         
 }
 
